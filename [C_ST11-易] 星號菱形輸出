@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j,k=0,n,a=1;
+    
+    scanf("%d",&n);
+    
+    if(n%2==0){
+        n=n-1;
+    }
+    
+    for(i=1;i<=n;i++){
+        
+        for(k=0;k<(n-i)/2;k++){
+            printf(" ");
+        }
+        for(j=1;j<i+1;j++){
+                
+            printf("*");
+        }
+        printf("\n");
+        
+        i++;
+    }
+    for(i=n-2;i>=1;i--){
+        
+        for(k=(n-i)/2;k>0;k--){
+            printf(" ");
+        }
+        for(j=i+1;j>1;j--){
+                
+            printf("*");
+        }
+        printf("\n");
+        
+        i--;
+    }
+    
+
+    return 0;
+}
