@@ -1,0 +1,13 @@
+#include <stdio.h>  
+  
+int main()  
+{  
+      
+    float m,n;  
+      
+    scanf("%f %f",&m,&n);  
+      
+    printf("%.1f\n",m/(n*60));  
+  
+    return 0;  
+}  
